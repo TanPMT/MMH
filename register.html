@@ -108,7 +108,7 @@
 
                                     <div class="col-lg-6 col-md-6 col-12">
                                         <div class="form-floating mb-4 p-0">
-                                            <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address" required="">
+                                            <input type="email" name="email" id="email" class="form-control" placeholder="Email address" required="">
 
                                             <label for="email">Địa chỉ email</label>
                                         </div>
@@ -116,11 +116,16 @@
 
                                     <div class="col-lg-12 col-12">
                                         <div class="form-floating p-0">
-                                            <input type="password" name="password" id="password" class="form-control" placeholder="Password" required="">
-
+                                            <input type="password" name="password" id="password" class="form-control" pattern=""  placeholder="Password" required="">
                                             <label for="password">Mật khẩu</label>
+                                            <small>Tối thiểu 7 kí tự, 0-9, a-z, A-Z, kí tự đặc biệt</small>
                                         </div>
+                                       
 
+                                        <div class="form-floating mt-4">
+                                            <input type="password" name="confirm_password" id="confirm_password" class="form-control" placeholder="Nhập lại mật khẩu" required="">
+                                            <label for="confirm_password">Nhập lại mật khẩu</label>
+                                        </div>
                                         <div class="form-check mb-4">
                                             <input class="form-check-input ms-1" type="checkbox" value="" id="flexCheckDefault">
                                           
